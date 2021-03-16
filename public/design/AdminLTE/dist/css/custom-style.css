@@ -1,0 +1,353 @@
+@font-face {
+    font-family: '29LT Bukra';
+    src: url('fonts/29LTBukra-Regular.eot');
+    src: url('../fonts/29LTBukra-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/29LTBukra-Regular.woff2') format('woff2'),
+        url('../fonts/29LTBukra-Regular.woff') format('woff'),
+        url('../fonts/29LTBukra-Regular.ttf') format('truetype'),
+        url('../fonts/29LTBukra-Regular.svg#29LTBukra-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: '29LT Bukra';
+    src: url('fonts/29LTBukra-Bold.eot');
+    src: url('../fonts/29LTBukra-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/29LTBukra-Bold.woff2') format('woff2'),
+        url('../fonts/29LTBukra-Bold.woff') format('woff'),
+        url('../fonts/29LTBukra-Bold.ttf') format('truetype'),
+        url('../fonts/29LTBukra-Bold.svg#29LTBukra-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: '29LT Bukra';
+    src: url('../fonts/29LTBukra-Light.eot');
+    src: url('../fonts/29LTBukra-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/29LTBukra-Light.woff2') format('woff2'),
+        url('../fonts/29LTBukra-Light.woff') format('woff'),
+        url('../fonts/29LTBukra-Light.ttf') format('truetype'),
+        url('../fonts/29LTBukra-Light.svg#29LTBukra-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+/*---------------------------------- End of fonts ---------------------------------- */
+
+body {
+   font-family: '29LT Bukra';
+}
+.btn-tnafs {
+      color: #fff !important;
+    background-color: #61bab8;
+    border-color: #61bab8;
+}
+.btn-tnafs:hover {
+  background: #b4a882;
+  color: #fff;
+  border-color:#b4a882;
+
+}
+
+
+
+.ltr {
+    direction:ltr;
+}
+
+
+ul {
+    padding-inline-start: 0px;
+}
+
+.dropdown-item {
+    text-align: right;
+}
+.dropdown-footer, .dropdown-header {
+    text-align: center;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    padding-left: .5rem;
+}
+
+
+/*------------------------------------ contacts-list ------------------------------------*/
+.card-footer {
+    background:#202133;
+    color: #fff;
+}
+.bg-success, .alert-success, .label-success,.bg-info, .alert-info, .label-info {
+    background: linear-gradient(#61bab8, #6c757d);
+}
+.green {
+    background: #28a745 !important
+}
+.contacts-list-img {
+    float: right;
+}
+
+.contacts-list-info {
+    margin-right: 45px;
+    margin-left: 0;
+}
+
+
+
+/* sidebar */
+.sidebar-dark-primary {
+background:#16263f;
+}
+.sidebar-dark-primary .sidebar a {
+    color: #e3e3e3;
+}
+
+.sidebar {
+    direction: rtl;
+}
+
+.sidebar > div:first-child {
+    direction: rtl;
+}
+
+.control-sidebar, .control-sidebar:before {
+    left: -250px;
+    right: auto;
+    transition: left .3s ease-in-out;
+}
+
+.control-sidebar-slide-open .control-sidebar, .control-sidebar-slide-open .control-sidebar:before {
+    left: 0;
+    right: auto;
+}
+
+.small-box .icon {
+    right:auto;
+    left:10px;
+}
+
+.user-panel,.brand-link {
+    border-bottom: none !important;
+}
+
+.badge-danger {
+    font-size: 12px;
+    color: #ffffff;
+    background-color: #17a2b8;
+    float: left;
+    margin-top: 6px;
+}
+.nav-sidebar .nav-link>p>.right {
+    left: 1rem;
+    right: auto;
+}
+
+.nav-sidebar>.nav-item .nav-icon {
+    margin-right: 0;
+    margin-left: .2rem;
+}
+
+@media (min-width: 992px) {
+    .sidebar-mini.sidebar-collapse .content-wrapper, .sidebar-mini.sidebar-collapse .main-footer, .sidebar-mini.sidebar-collapse .main-header {
+        margin-right: 4.6rem;
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 992px) {
+    .sidebar-mini.sidebar-collapse .content-wrapper, .sidebar-mini.sidebar-collapse .main-footer, .sidebar-mini.sidebar-collapse .main-header {
+        margin-left: 0rem !important;
+        margin-right: 4.6rem !important;
+        z-index:100;
+    }
+
+    .sidebar-mini.sidebar-collapse .main-sidebar, .sidebar-mini.sidebar-collapse .main-sidebar:before {
+        margin-right: 0;
+        width: 4.6rem;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .content-wrapper, .main-footer, .main-header {
+        transition: margin-right .3s ease-in-out;
+        margin-right: 250px;
+        margin-left : 0;
+        z-index: 3000;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .main-sidebar, .main-sidebar:before {
+        box-shadow: none!important;
+        margin-right: -250px;
+        margin-left: 0;
+    }
+
+    .content-wrapper, .content-wrapper:before, .main-footer, .main-footer:before, .main-header, .main-header:before {
+        margin-right: 0;
+    }
+
+    .sidebar-open .main-sidebar, .sidebar-open .main-sidebar:before {
+        margin-right: 0;
+        z-index: 4000;
+    }
+}
+
+.sidebar-collapse .main-sidebar, .sidebar-collapse .main-sidebar:before {
+    margin-right: -250px;
+}
+
+.main-sidebar {
+    left: auto;
+    right:0;
+}
+
+/* Cards */
+
+.card-header>.card-tools {
+    right:auto;
+    left:1rem;
+}
+
+.user-block img {
+     float: right;
+}
+
+.attachment-block .attachment-img {
+    float: right;
+}
+
+.attachment-block .attachment-pushed {
+    margin-left: 0px;
+    margin-right: 110px;
+}
+
+.card-comments .card-comment img, .img-lg, .img-md, .img-sm, .user-block.user-block-sm img {
+    float: right;
+}
+
+.card-comments .comment-text {
+    margin-right: 40px;
+    margin-left: 0;
+}
+
+.card-comments .card-comment img+.img-push, .img-sm+.img-push, .user-block.user-block-sm img+.img-push {
+    margin-left: 0px;
+    margin-right: 40px;
+}
+
+.user-block .comment, .user-block .description, .user-block .username {
+    margin-right: 50px;
+    margin-left: 0px;
+}
+
+.btn-group-vertical {
+    align-items: center;
+}
+
+
+/*------------------------- Form ----------------------------*/
+.select2-container .select2-search--inline {
+    float: right;
+}
+
+.select2-container--default .select2-search--inline .select2-search__field {
+    text-align: right;
+}
+
+/*----------------------- Extra Page ---------------------------*/
+.error-page>.headline {
+    float: right;
+}
+
+.error-page>.error-content {
+    margin-right: 190px;
+    margin-left: 0;
+}
+
+.lockscreen-image {
+    left: auto;
+    right:-10px;
+}
+
+.lockscreen-credentials {
+    margin-left: 0px;
+    margin-right: 70px;
+}
+
+.nav {
+    padding-inline-start: 0px !important;
+}
+
+/*---------------------------------- Persian Date Picker ---------------------------------- */
+
+.datepicker-plot-area {
+    font-family: '29LT Bukra';
+}
+
+
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 0 solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+}
+
+.PasteLink {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/*STRART Student Show*/
+
+
+.studentTable {
+  box-shadow: -3px 2px 18px 3px #88888821
+
+}
+.footer-form {
+    display: inline-block;
+}
+.win {
+    font-size: 25px;
+    color: #329651;
+    font-weight: bold;
+}
+.win-footer {
+    background-color: #f8f9fa;
+    color: #1f2d3d;
+    padding: 15px;
+}
+
+.studentTable tr:nth-child(1){
+    background: #f8f9fa;
+
+}
+.studentTable .topNames{
+    background: #3fd25836;
+    font-weight: bold;
+    padding: 20px;
+    color: #18863f;
+}
+/*END Student Show*/
+.table th, .table td {
+     vertical-align: middle;
+ }
+
+.alert .close, .alert .mailbox-attachment-close {
+    color: #fff;
+    opacity: 0.8;
+    float: left;
+}
